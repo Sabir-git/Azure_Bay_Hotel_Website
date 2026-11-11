@@ -8,6 +8,7 @@ pipeline {
           }
         stage('build'){
             steps {
+                sh 'docker rm azure-bay'
                 sh 'docker build -t azure_bay .'
             }
           }
