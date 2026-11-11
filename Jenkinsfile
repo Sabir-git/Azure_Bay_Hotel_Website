@@ -14,7 +14,7 @@ pipeline {
           }
         stage('test'){
             steps {
-              sh 'docker run -d -p 8081:80 --name azure-bay azure_bay'
+              sh 'docker run -d -p 3000:80 --name azure-bay azure_bay'
             }
           } 
         stage('verify'){
